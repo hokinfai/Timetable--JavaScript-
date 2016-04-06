@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <title>COMP312 Assignment 1</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css"/>
+  <script src="jquery.js"></script>
+  <script src='logic.js'></script>
+</head>
+
+<body>
+<h1>COMP312 Assignment 1</h1>
+
+<form action="#">
+Select Year:
+  <select name='year'>
+    <option value='2'>year 2</option>
+    <option value='3' selected>year 3</option>
+  </select>
+  Sort by: 
+  <label><input type='radio' name='sortBy' value='code' checked/> code</label>
+  <label><input type='radio' name='sortBy' value='time'/> time</label>
+  <button type='button' id='refresh'>Refresh</button>
+</form>
+ 
+<table id='classlist'>
+  <thead>
+    <tr><th>course code</th><th>course title</th><th>dow</th><th>time</th><th>room</th></tr>
+  </thead>
+  <tbody>      
+  </tbody>
+</table>
+
+
+<div class='calendar-container'>
+<table id='calendar'>
+  <thead><tr><td><th>Mon<th>Tue<th>Wed<th>Thu<th>Fri</tr></thead>
+  <tbody>
+    <tr><th><span>09:00</span><td><td><td><td><td></tr>
+    <tr><th><span>09:30</span><td><td><td><td><td></tr>
+    <tr><th><span>10:00</span><td><td><td><td><td></tr>
+    <tr><th><span>10:30</span><td><td><td><td><td></tr>
+    <tr><th><span>11:00</span><td><td><td><td><td></tr>
+    <tr><th><span>11:30</span><td><td><td><td><td></tr>
+    <tr><th><span>12:00</span><td><td><td><td><td></tr>
+    <tr><th><span>12:30</span><td><td><td><td><td></tr>
+    <tr><th><span>13:00</span><td><td><td><td><td></tr>
+    <tr><th><span>13:30</span><td><td><td><td><td></tr>
+    <tr><th><span>14:00</span><td><td><td><td><td></tr>
+    <tr><th><span>14:30</span><td><td><td><td><td></tr>
+    <tr><th><span>15:00</span><td><td><td><td><td></tr>
+    <tr><th><span>15:30</span><td><td><td><td><td></tr>
+    <tr><th><span>16:00</span><td><td><td><td><td></tr>
+    <tr><th><span>16:30</span><td><td><td><td><td></tr>
+    <tr><th><span>17:00</span><td><td><td><td><td></tr>
+    <tr><th><span>17:30</span><td><td><td><td><td></tr>
+    <tr><th><span>18:00</span><td><td><td><td><td></tr>
+    <tr><th><span>18:30</span><td><td><td><td><td></tr>
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>
+
