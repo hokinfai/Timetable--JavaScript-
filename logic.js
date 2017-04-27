@@ -75,9 +75,7 @@ function getLecturesForYearByTime(year) {
 										}
 											)
 												return sortTime;
-													}
-
-						   
+													}		   
 						   
 function refreshView(){
 		$("table#classlist tbody").remove();
@@ -92,14 +90,18 @@ function refreshView(){
 							var $row = $("<tr><td>" + appear[x].code + "</td><td>" + appear[x].title + "</td><td>" + dayOfWeek(appear[x].dow) + "</td><td>" + appear[x].start +'-'+appear[x].end+ "</td><td>" + appear[x].room + "</td></tr>");
 				$('table#classlist').append($row);
 
-
-
-				if(appear[x].code=='comp311'||appear[x].code=='comp211') $('.eventTile div').eq(x).addClass('c1');
-				else if(appear[x].code=='comp312'||appear[x].code=='comp212') $('.eventTile div').eq(x).addClass('c2');
-				else if(appear[x].code=='comp313'||appear[x].code=='comp213') $('.eventTile div').eq(x).addClass('c3');	
-				else if(appear[x].code=='comp314'||appear[x].code=='comp214') $('.eventTile div').eq(x).addClass('c4');	
-				else if(appear[x].code=='comp315'||appear[x].code=='math211') $('.eventTile div').eq(x).addClass('c5');	
-				else $('.eventTile div').eq(x).addClass('c6');				
+				if(appear[x].code=='comp311'||appear[x].code=='comp211') 
+					$('.eventTile div').eq(x).addClass('c1');
+				else if(appear[x].code=='comp312'||appear[x].code=='comp212') 
+					$('.eventTile div').eq(x).addClass('c2');
+				else if(appear[x].code=='comp313'||appear[x].code=='comp213') 
+					$('.eventTile div').eq(x).addClass('c3');	
+				else if(appear[x].code=='comp314'||appear[x].code=='comp214') 
+					$('.eventTile div').eq(x).addClass('c4');	
+				else if(appear[x].code=='comp315'||appear[x].code=='math211') 
+					$('.eventTile div').eq(x).addClass('c5');	
+				else 
+					$('.eventTile div').eq(x).addClass('c6');				
 					}
 				}
 			else if(sorted =='time')	{
@@ -119,8 +121,6 @@ function refreshView(){
 
 				
 				}
-								 
-
 
 $(document).ready(function(){
 				$('#refresh').click(refreshView);		   
